@@ -23,9 +23,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
-#include <sys/file.h>
-#include <stdint.h>
 #include <unistd.h>
 
 #define uint GLushort // it's a short don't forget that
