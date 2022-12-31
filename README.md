@@ -26,5 +26,5 @@ https://snapcraft.io/coinpusher
 https://github.com/mrbid/coinpusher/raw/main/coin
 
 ### Windows Binaries
-https://github.com/mrbid/coinpusher/raw/main/coin.exe
+https://github.com/mrbid/coinpusher/raw/main/coin.exe<br>
 https://github.com/mrbid/coinpusher/raw/main/glfw3.dll
