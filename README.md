@@ -10,7 +10,7 @@ A 3D coin pusher game.
 - Getting a figurine in a silver slot when you already have the silver figurine gives you 6x silver coins.
 
 ### Controls
-Just move around your mouse and click to release a coin.
+_Just move around your mouse and click to release a coin._
 - Left Click = Release coin.
 - Right Click = Show/Hide cursor.
 - C = Orthographic/Perspective.
