@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CoinPusher
+Comment=A fun coin pusher game, SeaPusher.com
+StartupNotify=false
+Exec=coinpusher
+Icon=${SNAP}/meta/gui/coinpusher.png
+Terminal=false
+Type=Application
+Categories=Application;Game;ArcadeGame;

@@ -1,0 +1,46 @@
+name: coinpusher
+base: core20
+version: '1.0'
+summary: A fun coin pusher game, SeaPusher.com
+description: |
+  Just move around your mouse and click to release a coin.
+
+  Getting a gold coin in a silver slot rewards you 2x silver coins.
+  Getting a gold coin in a gold slot rewards you 2x gold coins.
+  Getting a figurine in a gold slot when you already have the gold figurine gives you 6x gold coins.
+  Getting a figurine in a silver slot when you already have the silver figurine gives you 6x silver coins.
+
+  Left Click = Release coin.
+  Right Click = Show/Hide cursor.
+  C = Orthographic/Perspective.
+  F = FPS to console.
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: amd64
+    run-on: amd64
+
+apps:
+  coinpusher:
+    extensions: [gnome-3-38]
+    command: coinpusher
+    plugs:
+    - desktop
+    - desktop-legacy
+    - gsettings
+    - opengl
+    - wayland
+    - x11
+
+parts:
+  coinpusher:
+    source: https://github.com/mrbid/coinpusher
+    source-type: git
+    plugin: make
+    build-packages:
+    - libglfw3-dev
+    stage-packages:
+    - libglfw3
+    - libgles2
