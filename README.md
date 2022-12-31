@@ -1,7 +1,7 @@
 # coinpusher
 A 3D coin pusher game.
 
-> Growing up on a seaside town I had always been fascinated by arcade Coin Pusher's, after graduating from Teesside University in 2011 I wanted to create a coin pusher game for mobile devices. It would take me just over a decade on from then to finally realise this ambition with https://SeaPusher.com and now I have decided to open source this code to the Linux FOSS community as no other game of this kind to date is available for free on Linux.
+> Growing up on a seaside town I had always been fascinated by arcade Coin Pusher's, after graduating from Teesside University in 2011 I wanted to create a coin pusher game for mobile devices. It would take me just over a decade on from then to finally realise this ambition with https://SeaPusher.com and now I have decided to open source the source code to the Linux FOSS community as no other game of this kind to date is available for free on Linux.
 
 ### Mechanics / Rules
 - Getting a gold coin in a silver slot rewards you 2x silver coins.
