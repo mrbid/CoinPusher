@@ -1,6 +1,8 @@
 # coinpusher
 A 3D coin pusher game.
 
+Growing up on a seaside town I had always been fascinated by arcade Coin Pusher's, after graduating from university in 2011 I wanted to create a coin pusher game for mobile devices. It would take me just over a decade on from then to finally realise this ambition with https://SeaPusher.com and now I have decided to open source this code to the Linux FOSS community as no other game of this kind to date is available for free on Linux.
+
 Just move around your mouse and click to release a coin.
 
 ### Mechanics / Rules
