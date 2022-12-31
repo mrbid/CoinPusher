@@ -30,4 +30,4 @@ https://github.com/mrbid/coinpusher/raw/main/coin.exe<br>
 https://github.com/mrbid/coinpusher/raw/main/glfw3.dll
 
 ### License
-GPL-2.0 only this includes source code and all assets apart from the three figurines ([merman.h](assets/merman.h), [diver.h](assets/diver.h), [skeleton.h](assets/skeleton.h)) created by [MrBigTong](https://www.thingiverse.com/bigmrtong) which come with their own licensing.
+This software (CoinPusher aka SeaPusher(.com)) is released under the GPL-2.0 license ONLY that means GPL-3.0 and any subsequent versions of the GPL license are NOT applicable. This licensing includes source code and all assets apart from the three figurines ([merman.h](assets/merman.h), [diver.h](assets/diver.h), [skeleton.h](assets/skeleton.h)) created by [MrBigTong](https://www.thingiverse.com/bigmrtong) which come with their own licensing.
