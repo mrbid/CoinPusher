@@ -28,3 +28,6 @@ https://github.com/mrbid/coinpusher/raw/main/coin
 ### Windows Binaries
 https://github.com/mrbid/coinpusher/raw/main/coin.exe<br>
 https://github.com/mrbid/coinpusher/raw/main/glfw3.dll
+
+### License
+GPL-2.0 only this includes source code and all assets apart from the three figurines ([merman.h](assets/merman.h), [diver.h](assets/diver.h), [skeleton.h](assets/skeleton.h)) created by [MrBigTong](https://www.thingiverse.com/bigmrtong) which come with their own licensing.
