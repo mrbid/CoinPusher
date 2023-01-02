@@ -555,9 +555,9 @@ void newGame()
     //     {
     //         coins[i].x = esRandFloat(-3.40863f, 3.40863f);
     //         coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
-    //         coins[i].color = esRand(0, 4);
-    //         if(coins[i].color > 1){coins[i].color = 0;}
     //     }
+    //     coins[i].color = esRand(0, 4);
+    //     if(coins[i].color > 1){coins[i].color = 0;}
     // }
 }
 
