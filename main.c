@@ -96,7 +96,7 @@ ESModel mdlSkeleton;
 ESModel mdlGameover;
 
 // game vars
-f32 gold_stack = 64.f;  // line 741+ defining these as float32 eliminates the need to cast in mTranslate()
+f32 gold_stack = 64.f;  // line 740+ defining these as float32 eliminates the need to cast in mTranslate()
 f32 silver_stack = 64.f;// function due to the use of a float32 also in the for(f32 i;) loop.
 uint active_coin = 0;
 uint inmotion = 0;
@@ -527,7 +527,7 @@ void newGame()
     }
 
     // coins
-    double lt = glfwGetTime();
+    const double lt = glfwGetTime();
     for(int i=3; i < MAX_COINS; i++)
     {
         coins[i].x = esRandFloat(-3.40863f, 3.40863f);
@@ -541,8 +541,7 @@ void newGame()
         }
         if(tl==1){break;}
         coins[i].color = esRand(0, 4);
-        if(coins[i].color > 1)
-            coins[i].color = 0;
+        if(coins[i].color > 1){coins[i].color = 0;}
     }
 
     // const int mc2 = MAX_COINS/2;
