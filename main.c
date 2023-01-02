@@ -416,9 +416,9 @@ uint stepCollisions()
                         }
                     }
                 }
-                else if(coins[j].y >= 4.31457f)
+                else if(coins[j].y >= 4.31457f) // gold goal
                 {
-                    if(coins[j].x >= -0.584316f && coins[j].x <= 0.584316f) // gold goal
+                    if(coins[j].x >= -0.584316f && coins[j].x <= 0.584316f)
                     {
                         if(j == 0)
                         {
