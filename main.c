@@ -629,10 +629,8 @@ void main_loop(uint dotick)
     glUniform3f(lightpos_id, lightpos.x, lightpos.y, lightpos.z);
     glUniform1f(opacity_id, 1.0f);
 
-    // maticies
+    // render scene
     glUniformMatrix4fv(modelview_id, 1, GL_FALSE, (f32*) &view.m[0][0]);
-
-    // render
     modelBind3(&mdlScene);
     glDrawElements(GL_TRIANGLES, scene_numind, GL_UNSIGNED_SHORT, 0);
 
