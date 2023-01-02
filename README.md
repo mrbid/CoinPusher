@@ -19,6 +19,9 @@ _Just move around your mouse and click to release a coin._
 - C = Orthographic/Perspective.
 - F = FPS to console.
 
+### Web _(no download)_
+https://SeaPusher.com
+
 ### Snapcraft
 https://snapcraft.io/coinpusher
 
