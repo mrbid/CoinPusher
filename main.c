@@ -96,7 +96,7 @@ ESModel mdlSkeleton;
 ESModel mdlGameover;
 
 // game vars
-f32 gold_stack = 64.f;  // line 728+ defining these as float32 eliminates the need to cast in mTranslate()
+f32 gold_stack = 64.f;  // line 741+ defining these as float32 eliminates the need to cast in mTranslate()
 f32 silver_stack = 64.f;// function due to the use of a float32 also in the for(f32 i;) loop.
 uint active_coin = 0;
 uint inmotion = 0;
@@ -526,28 +526,39 @@ void newGame()
         }
     }
 
-    // normal coins
+    // coins
     double lt = glfwGetTime();
     for(int i=3; i < MAX_COINS; i++)
     {
         coins[i].x = esRandFloat(-3.40863f, 3.40863f);
         coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
+        uint tl = 0;
         while(insidePitch(coins[i].x, coins[i].y, coins[i].r) == 0 || collision(i) == 1)
         {
             coins[i].x = esRandFloat(-3.40863f, 3.40863f);
             coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
-            if(glfwGetTime()-lt > 0.333)
-                break;
+            if(glfwGetTime()-lt > 0.033){tl=1;break;} // 33ms timeout
         }
 
-        if(glfwGetTime()-lt < 0.333)
-        {
-            coins[i].color = esRand(0, 4);
-            if(coins[i].color > 1)
-                coins[i].color = 0;
-            lt = t;
-        }
+        if(tl==1){break;}
+        coins[i].color = esRand(0, 4);
+        if(coins[i].color > 1)
+            coins[i].color = 0;
     }
+
+    // const int mc2 = MAX_COINS/2;
+    // for(int i=3; i < mc2; i++)
+    // {
+    //     coins[i].x = esRandFloat(-3.40863f, 3.40863f);
+    //     coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
+    //     while(insidePitch(coins[i].x, coins[i].y, coins[i].r) == 0 || collision(i) == 1)
+    //     {
+    //         coins[i].x = esRandFloat(-3.40863f, 3.40863f);
+    //         coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
+    //         coins[i].color = esRand(0, 4);
+    //         if(coins[i].color > 1){coins[i].color = 0;}
+    //     }
+    // }
 }
 
 //*************************************
@@ -1094,7 +1105,6 @@ int main(int argc, char** argv)
 // configure render options
 //*************************************
 
-    // standard stuff
     glEnable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
     glClearColor(0.52941f, 0.80784f, 0.92157f, 0.0f);
