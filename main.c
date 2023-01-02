@@ -539,7 +539,6 @@ void newGame()
             coins[i].y = esRandFloat(-4.03414f, 1.45439f-coins[i].r);
             if(glfwGetTime()-lt > 0.033){tl=1;break;} // 33ms timeout
         }
-
         if(tl==1){break;}
         coins[i].color = esRand(0, 4);
         if(coins[i].color > 1)
