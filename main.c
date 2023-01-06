@@ -13,7 +13,7 @@
 
     The only niggle is the inability to remove depth buffering
     when rendering the game over text due to the way I exported
-    the mesh, disabing depth results in the text layers inverting
+    the mesh, disabling depth results in the text layers inverting
     causing the shadow to occlude the text face. It's not the
     end of the world, but could be fixed.
 */
