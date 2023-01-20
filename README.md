@@ -32,7 +32,7 @@ https://github.com/mrbid/coinpusher/raw/main/coin
 https://github.com/mrbid/coinpusher/raw/main/coin.exe<br>
 https://github.com/mrbid/coinpusher/raw/main/glfw3.dll
 
-## Typography
+### Typography
 [Celtic Sea by Art Designs by Sue](https://www.fontspace.com/celtic-sea-font-f58168)
 > I found this great font on a title page of an old book called Songs of the Hebrides. I named it Celtic Sea because of the large number of songs about the sea, sea creatures, and mythical sea beings, such as kelpies and mermaids.
 
