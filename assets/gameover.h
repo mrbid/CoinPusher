@@ -3,7 +3,7 @@
 #define gameover_H
 
 /*
-  Fony by Celtic Sea by Art Designs by Sue
+  Font by Celtic Sea by Art Designs by Sue
   https://www.fontspace.com/celtic-sea-font-f58168
   "I found this great font on a title page of an old book called Songs of the Hebrides.
   I named it Celtic Sea because of the large number of songs about the sea, sea creatures,
