@@ -32,5 +32,9 @@ https://github.com/mrbid/coinpusher/raw/main/coin
 https://github.com/mrbid/coinpusher/raw/main/coin.exe<br>
 https://github.com/mrbid/coinpusher/raw/main/glfw3.dll
 
+## Typography
+[Celtic Sea by Art Designs by Sue](https://www.fontspace.com/celtic-sea-font-f58168)
+> I found this great font on a title page of an old book called Songs of the Hebrides. I named it Celtic Sea because of the large number of songs about the sea, sea creatures, and mythical sea beings, such as kelpies and mermaids.
+
 ### License
 This software (CoinPusher aka SeaPusher(.com)) is released under the [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html) license. Being released under 'GPL-2.0-only' means that any subsequent versions of the GPL-2.0 license are NOT applicable to the source code or assets in this GitHub repository. This GPL-2.0-only licensing includes source code and all assets apart from the three figurines ([merman.h](assets/merman.h), [diver.h](assets/diver.h), [skeleton.h](assets/skeleton.h)) created by [BigMrTong](https://www.thingiverse.com/bigmrtong) which are licenced under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
