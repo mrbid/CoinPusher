@@ -1023,6 +1023,10 @@ int main(int argc, char** argv)
     printf("Figurine 3D assets by BigMrTong:\n");
     printf("https://www.thingiverse.com/bigmrtong\n");
     printf("----\n");
+    printf("Font (sortof) by Celtic Sea by Art Designs by Sue\n");
+    printf("https://www.fontspace.com/celtic-sea-font-f58168\n");
+    printf("\"I found this great font on a title page of an old book called Songs of the Hebrides. I named it Celtic Sea because of the large number of songs about the sea, sea creatures, and mythical sea beings, such as kelpies and mermaids.\"\n");
+    printf("----\n");
     printf("Rules:\n");
     printf("Getting a gold coin in a silver slot rewards you 2x silver coins.\n");
     printf("Getting a gold coin in a gold slot rewards you 2x gold coins.\n");
