@@ -940,18 +940,17 @@ void window_size_callback(GLFWwindow* window, int width, int height)
     winh = height;
 
     glViewport(0, 0, winw, winh);
-    aspect = (f32)winw / (f32)winh;
-    ww = winw;
-    wh = winh;
+    ww = (double)winw;
+    wh = (double)winh;
     if(ortho == 1){touch_margin = ww*0.3076923192f;}
     else{touch_margin = ww*0.2058590651f;}
     rww = 1.0/(ww-touch_margin*2.0);
     rwh = 1.0/wh;
     ww2 = ww/2.0;
     wh2 = wh/2.0;
-    uw = (double)aspect / ww;
+    uw = ((double)aspect) / ww;
     uh = 1.0/wh;
-    uw2 = (double)aspect / ww2;
+    uw2 = ((double)aspect) / ww2;
     uh2 = 1.0/wh2;
 
     mIdent(&projection);
@@ -961,9 +960,9 @@ void window_size_callback(GLFWwindow* window, int width, int height)
     else
     {
         if(winw > winh)
-            aspect = (f32)winw / (f32)winh;
+            aspect = (f32)(ww / wh);
         else
-            aspect = (f32)winh / (f32)winw;
+            aspect = (f32)(wh / ww);
         mPerspective(&projection, 30.0f, aspect, 0.01f, 320.f);
     }
 }
