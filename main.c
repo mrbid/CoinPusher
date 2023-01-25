@@ -670,25 +670,7 @@ void main_loop(uint dotick)
             glUniform3f(color_id, 0.76471f, 0.63529f, 0.18824f);
         else
             glUniform3f(color_id, 0.68235f, 0.70196f, 0.72941f);
-        if(md == 1)
-        {
-            if(mx < touch_margin)
-            {
-                coins[active_coin].x = -1.90433f;
-                coins[active_coin].y = -4.54055f;
-            }
-            else if(mx > ww-touch_margin)
-            {
-                coins[active_coin].x = 1.90433f;
-                coins[active_coin].y = -4.54055f;
-            }
-            else
-            {
-                coins[active_coin].x = -1.90433f+(((mx-touch_margin)*rww)*3.80866f);
-                coins[active_coin].y = -4.54055f;
-            }
-        }
-        else if(inmotion == 0)
+        if(inmotion == 0)
         {
             if(silver_stack > 0.f)
                 glUniform3f(color_id, 0.68235f, 0.70196f, 0.72941f);
@@ -927,10 +909,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     else if(action == GLFW_RELEASE)
     {
         if(button == GLFW_MOUSE_BUTTON_LEFT)
-        {
-            inmotion = 1;
             md = 0;
-        }
     }
 }
 
